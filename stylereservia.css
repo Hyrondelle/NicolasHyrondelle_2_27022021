@@ -1,5 +1,123 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-VariableFont_wght.ttf") format("ttf")
+  }
+body
+{
+font-family: "Raleway";
+}
 .search
 {
 background-color: #0065FC;
 color: white;
+}
+.menu
+{
+    display: flex;
+    position: absolute;
+    right: 0%;
+}
+.nav
+{
+    display: flex;
+}
+.fas
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+.fas .fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    
+}
+.filtres
+{
+    display: flex;
+}
+.heberMarseille
+{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    align-self: stretch;
+    justify-items: stretch;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+}
+article
+{
+    margin: 10px;
+    width: 70%;
+    height: 600px;
+    background-color: #F2F2F2;
+}
+.card
+{
+    min-width: 200PX;
+    min-height: 200PX;
+    margin: 10px;
+    background-color: white;
+}
+.card2
+{
+    min-width: 250PX;
+    min-height: 150PX;
+    margin: 10px;
+    background-color: white;
+}
+aside
+{
+    margin: 10px;
+    width: 30%;
+    background-color: #F2F2F2;
+}
+.heberAvecPopulaire
+{
+    display: flex;
+}
+.activitées
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    border: solid black;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    border: solid black;
+  }
+  .three {
+    grid-column: 2;
+    grid-row: 4 / 6;
+    border: solid black;
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 1 / 6;
+    border: solid black;
+  }
+  .five {
+    grid-column: 4;
+    grid-row: 1/ 3;
+    border: solid black;
+  }
+  .six {
+    grid-column: 4;
+    grid-row: 3 / 6;
+    border: solid black;
+  }
+footer
+{
+    width: 100%;
+    height: 100px;
+    background-color: #F2F2F2;
 }
