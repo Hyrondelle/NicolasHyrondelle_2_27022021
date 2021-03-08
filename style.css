@@ -1,7 +1,8 @@
-body
+*
 {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+    text-decoration: none;
 }
 header
 {
@@ -21,65 +22,100 @@ header
 {
     display: flex;
 }
-.heb
-{
-    border-top:solid 2px #0065FC;
-    color: #0065FC;
-}
-.act
+
+.act , .heb
 {
     border-top:solid 2px transparent;
     color: black;
 }
-.act:hover
+.act:hover , .heb:hover
 {
     border-top:solid 2px #0065FC;
+    color: #0065FC;
 }
 .ins
 {
+    border-top:solid 2px transparent;
     color: #0065FC;
+    font-weight:bold;
+}
+h4
+{
+    
+    font-size: 1.5rem;
     font-weight: bold;
+}
+.research
+{
+    display: flex;
+    margin-top: 10px;
 }
 .loca
 {
-    
+    width: 40px;
     background-color: #F2F2F2;
-    width: 30px;
-    height: 30px;  
-    border-bottom-left-radius: 20%;
-    border-top-left-radius: 20%;
-}
-.geo
-{
-   margin-top: 25%;
-   margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
+.recherche
+{
+    border: solid #F2F2F2 1px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    
+}
 .search
 {
+    font-weight: 600;
     background-color: #0065FC;
     color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.filters
+{ 
+    margin-top: 20px;
+    display: flex;
+    
+}
+.iconesAndTexts
+{
+    display: flex;
+    margin-right: 20px;
+}
+.icones
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textIcones
+{
+    border-top: solid #F2F2F2 2px;
+    border-bottom: solid #F2F2F2 2px;
+    border-right: solid #F2F2F2 2px;
+    color: black;    
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
 }
 .info
 {
     background-color:#0065FC;  
     color: white;
-}
-.icones
-{
-    border-top: solid #F2F2F2;
-    border-bottom: solid #F2F2F2;
-    border-right: solid #F2F2F2 ;
-    border-radius: 40px 40px 40px 40px;   
-    padding: 4pX;
-    margin-right: 10px;
-}
-.filtres
-{
-
-    margin: 10px;
-    display: flex;
-    font-weight: bold;
 }
 .heberMarseille
 {
