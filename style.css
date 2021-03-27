@@ -31,13 +31,18 @@ header{
     color: #0065FC;
     font-weight:bold;
 }
-h4{   
-    font-size: 1.5rem;
-    font-weight: bold;
+h1{   
+    margin-bottom: 10px;
+    font-weight:800;
+}
+section p{
+    font-weight: 500;
+   
 }
 .research{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 .loca{
     width: 40px;
@@ -53,7 +58,8 @@ h4{
     border: solid #F2F2F2 1px;
     font-weight: bold;
     padding: 10px;
-    font-size: 16px;   
+    font-size: 16px;  
+    
 }
 .search{
     font-weight: 600;
@@ -70,7 +76,7 @@ h4{
 }
 .titlefilters{
     color: black;    
-    font-weight: bold;
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +107,7 @@ h4{
 }
 .textIcones{  
     color: black;    
-    font-weight: bold;
+    font-weight: 800;
     padding: 10px;
 }
 .info{
@@ -132,29 +138,48 @@ h4{
     display: flex;
     margin: 20px 10px 20px 10px;
 } 
-.heberMarseille{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;   
-    width: 100%;
-}
-.cardX2{
-    margin: auto;
-}
 article{    
-    width: 70%;   
+    width: 68%;   
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-article p{
-    font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
+article h3{
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.heberMarseille{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardX2{
+    width: 28%;
+    
+}
+.card{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0 0 6px 3px #adadad46; 
+    transition: 0.4s;  
+}
+.card:hover,.card2:hover{
+    transform: scale(1.07);
+}
+.img{
+    width: 100%;
+    height: 55%;   
+    border-radius: 20px 20px 0 0;    
+    object-fit: cover;
 }
 .textAndStar{
     color: black;
-    margin: 7px 0 10px 15px;
+    margin: 8px 0 7px 15px;
 }
 .space{
     margin-top: 5px;
@@ -163,7 +188,7 @@ article p{
     margin-right: 2px;
 }
 .bold{
-    font-weight: bold;
+    font-weight: 800;
 }
 .blue{
     color: #0065FC;
@@ -171,31 +196,26 @@ article p{
 .grey{
     color: #F2F2F2;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    min-width: 250PX;    
-    margin-top: 30px;
-    background-color: white;
-    border-radius: 22px;
-}
-.img{
-    max-width: 300px;
-    max-height: 120px;
-    border-radius: 20px 20px 0 0;
-    margin: 4px;
-}
 .star{
     display: flex;    
+}
+h4{
+    color: black;
+    font-weight: 800;
+    margin: 30px 0 30px 30px;
 }
 aside{
     border-radius: 20px;
     margin-left: 30px;
-    width: 30%;
+    width: 32%;
     background-color: #F2F2F2;
 }
-aside p{
-    font-weight: bold;  
+aside h3{
+    font-weight: 800;
+    margin: 10px 0 12px 10px;
+}
+.popu i{
+    margin-top: 10px;
 }
 .card2{
     border-radius: 22px;
@@ -205,7 +225,9 @@ aside p{
     max-height: 150px;
     margin: 20px;
     background-color: white;
+    transition: 0.4s;
 }
+
 .popu{
     display: flex;
     justify-content: space-between;
@@ -215,6 +237,7 @@ section{
     margin: 10px;
 }
 .img2{ 
+    object-fit: cover;
     max-width: 150px;
     border-radius: 20px 0 0 20px;
     margin: 4px;
@@ -224,35 +247,125 @@ section{
     color: black;
     margin: 10px;
 }
+.space2{
+    margin: 5px 0 40px 0;
+}
 .activitées{
     display: flex;
-  
+    justify-content: center;
+    margin-top: 20px;
+    height: 500px;
+    
+    
 }
-.one {
+.cardX4{
+    height: 380px;
+    width: 25%;
+   
     
+}
+.cardX4 p{
+    color: black;
+    font-weight: 600;
+    margin: 10px;
+}
+.right{
+    margin-right: 30px;
+}
+.margin{
+    display: block;
+    margin-bottom: 30px;
+    
+    
+}
+.shadow{
+    
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+    
+}
+.img3{
+    border-radius: 20px 20px 0 0;
+    
+  }
+.one{
+    height: 350px;
+    background-position: center;
+    background-size: cover;
      
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   }
-  .two {
-     
-  }
-  .three {
+.two{
+    height: 170px;
+    background-position: center;
+    background-size: cover;
     
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   }
-  .four {
-      
+.tree{
+    height: 120px;
+    background-position:top;
+    background-size: cover;
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
   }
-  .five {
+.four{
+    height: 350px;
+    background-size:cover;
+    background-position:center;
     
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
-  .six {
-      
+.five{
+    height: 145px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
-  .img3{
-    max-width: 200px;
+.six{
+    height: 145px;
+    background-position: center;
+    background-size: cover;
+    
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 footer{
+    margin-top: 30px;
     display: flex;
     width: 100%;
     height: 100px;
     background-color: #F2F2F2;
+}
+@media screen and (max-width:1222px) {
+    .space2{
+        margin: 0 0 10px 0;
+    }
+}
+@media screen and (max-width:1126px) {
+    .space2{
+        margin: 0 0 0 0;
+    }
+}
+@media screen and (max-width:1000px) {
+    .heberAvecPopulaire{
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+    
+    article{    
+        width: 100%;      
+    }
+    aside{    
+        width: 100%;  
+        margin-left: 0; 
+        margin-top: 20px;   
+    }
+    .space2{
+        margin: 5px 0 40px 0;
+    }
+}
+@media screen and (max-width:844px) {
+    .filters{ 
+        margin-top: 20px;
+        display: flex; 
+        flex-wrap: wrap; 
 }
