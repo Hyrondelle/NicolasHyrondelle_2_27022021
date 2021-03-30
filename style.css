@@ -80,6 +80,7 @@ section p{
     padding: 12px;
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
+    border:none;
 }
 .search2{
     display: none;
@@ -479,6 +480,7 @@ li a{
         align-items: center;
         border-bottom-left-radius: 12px;
         border-top-left-radius: 12px;
+        border: none;
     }
     header{
         display:flex;
