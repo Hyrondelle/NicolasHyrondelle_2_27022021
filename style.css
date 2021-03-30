@@ -4,20 +4,25 @@
     text-decoration: none;
 }
 header{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
-.nav{
-    display: flex;  
+.logo{
+    height: 50px;
+    margin-left: 5px;
 }
-.nav a{
+nav{
+    display: flex;
+    margin-right: 80px;
+}
+nav a{
     text-decoration: none;
     padding: 20px;
+    height: 50px;   
 }
-.menu{
-    display: flex;
-}
-
 .act , .heb{
     border-top:solid 2px transparent;
     color: black;
@@ -27,9 +32,16 @@ header{
     color: #0065FC;
 }
 .ins{
+    height: 50px;
     border-top:solid 2px transparent;
     color: #0065FC;
     font-weight:bold;
+    position: absolute;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
 }
 h1{   
     margin-bottom: 10px;
@@ -69,6 +81,9 @@ section p{
     padding: 12px;
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
+}
+.search2{
+    display: none;
 }
 .filters{ 
     margin-top: 20px;
@@ -136,7 +151,7 @@ section p{
   } 
 .heberAvecPopulaire{
     display: flex;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 20px 20px 20px;
 } 
 article{    
     width: 68%;   
@@ -168,7 +183,7 @@ article h3{
     box-shadow: 0 0 6px 3px #adadad46; 
     transition: 0.4s;  
 }
-.card:hover,.card2:hover{
+.card:hover,.card2:hover,.shadow:hover{
     transform: scale(1.07);
 }
 .img{
@@ -234,7 +249,10 @@ aside h3{
     margin: 20px;
 }
 section{
-    margin: 10px;
+    margin: 40px 20px;
+}
+section h3{
+    font-weight: 800;
 }
 .img2{ 
     object-fit: cover;
@@ -254,15 +272,11 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 500px;
-    
-    
+    height: 410px;
 }
 .cardX4{
-    height: 380px;
-    width: 25%;
-   
-    
+    height: 390px;
+    width: 25%;  
 }
 .cardX4 p{
     color: black;
@@ -274,9 +288,7 @@ section{
 }
 .margin{
     display: block;
-    margin-bottom: 30px;
-    
-    
+    margin-bottom: 30px; 
 }
 .shadow{
     
@@ -289,51 +301,77 @@ section{
     
   }
 .one{
-    height: 350px;
+    height: 340px;
     background-position: center;
     background-size: cover;
      
     background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   }
 .two{
-    height: 170px;
+    height: 150px;
     background-position: center;
     background-size: cover;
     
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   }
 .tree{
-    height: 120px;
+    height: 110px;
     background-position:top;
     background-size: cover;
     background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
   }
 .four{
-    height: 350px;
+    height: 340px;
     background-size:cover;
     background-position:center;
     
     background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
 .five{
-    height: 145px;
+    height: 130px;
     background-position: center;
     background-size: cover;
     background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   }
 .six{
-    height: 145px;
+    height: 130px;
     background-position: center;
     background-size: cover;
     
     background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
+  .box2{
+     height: 200px;
+  }
+  .box3{
+    height: 160px;
+ }
+ .box5, .box6{
+    height: 180px;
+ }
+  .shadow p{
+      font-weight: 700;
+      margin: 15px 0 15px 15px;
+  }
 footer{
     margin-top: 30px;
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 170px;
     background-color: #F2F2F2;
+   
+}
+ul{
+    width: 33%; 
+    list-style: none; 
+    margin: 20px 0 20px 20px;  
+}
+li{
+    margin-top: 10px;
+    
+}
+li a{
+    color: black;
 }
 @media screen and (max-width:1222px) {
     .space2{
@@ -345,14 +383,23 @@ footer{
         margin: 0 0 0 0;
     }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1086px) {
+    .activitées{
+        display:flex;
+        flex-wrap: wrap;
+        height: 800px;
+        
+    }
+}
+@media screen and (max-width:1020px) {
     .heberAvecPopulaire{
         display: flex;
         flex-direction: column-reverse;
     } 
     
     article{    
-        width: 100%;      
+        width: 100%; 
+        margin-top: 20px;     
     }
     aside{    
         width: 100%;  
@@ -363,9 +410,106 @@ footer{
         margin: 5px 0 40px 0;
     }
 }
+@media screen and (max-width:1000px) {
+.cardX4{
+    width: 40%; 
+    margin: auto; 
+    }
+}
 @media screen and (max-width:844px) {
     .filters{ 
         margin-top: 20px;
         display: flex; 
         flex-wrap: wrap; 
+    }
+    footer{
+        height: 250px;
+    }
+}
+@media screen and (max-width:748px) {
+    .heberMarseille{
+        display:flex;
+        flex-wrap:wrap;
+        margin: 0;
+    }
+    .cardX2{
+        width: 40%;
+    }
+}
+@media screen and (max-width:645px) {
+    article{    
+        background-color: white; 
+    }
+    .cardX2{
+        width: 100%;
+    }
+    .cardX4{
+        width: 100%;
+    }
+    .activitées{
+        height: 1600px;
+    }
+    ul{
+        width:100%
+    }
+    .card:hover,.card2:hover,.shadow:hover{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .search{
+        display: none;
+    }
+    .search2{
+        width: 40px;   
+        color: white;
+        background-color: #0065FC;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+    header{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    section{
+        margin-top: 70px;
+        
+    }
+    nav{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 50px;
+    }
+    nav a{
+        text-decoration: none;
+        padding: 0;
+        height: 50px;
+    }
+    .act , .heb{
+        display: flex;
+        justify-content: center;  
+        width: 50%;
+        align-items: center;
+    }
+    .act:hover , .heb:hover{
+        border-bottom:solid 2px #0065FC;
+        border-top:none;
+        color: #0065FC;
+    }
+    aside{
+        border-radius: 0;  
+    }
+    footer{
+        display: block;
+        height: 350px;
+        padding-top: 20px ;
+    }
 }

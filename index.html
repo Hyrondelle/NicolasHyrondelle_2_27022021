@@ -12,14 +12,14 @@
 </head>
 <body>  
     <header>
-        <img src="images\logo\Reservia.svg">
-        <nav class="nav">
-            <div class="menu">
-                <a class="heb" href="#">Hébergements</a>
-                <a class="act" href="#">Activités</a>               
-            </div>    
-            <a class="ins" href="#">S'inscrire</a>
-        </nav>
+        <a>
+            <img class="logo" src="images\logo\Reservia.svg">
+        </a>
+        <nav>
+            <a class="heb" href="#">Hébergements</a>
+            <a class="act" href="#">Activités</a>               
+        </nav>    
+        <a class="ins" href="#">S'inscrire</a>     
     </header>
     <section>
         <h1>
@@ -34,6 +34,7 @@
             </div>            
             <input class="recherche" type="search" name="recherche" required size="20" placeholder="Marseille,France">
             <a href="" class="search">Rechercher</a>
+            <a class="search2"><i class="fas fa-search"></i></a>
         </div>
         <div class="filters">
             <div class="titlefilters">Filtres</div>
@@ -214,42 +215,55 @@
         </aside>
     </div>
     <section>
-        <p class="bold">Activités à Marseille</p>
+        <h3>Activités à Marseille</h3>
         <div class="activitées">
             <a class="cardX4 right shadow" href="#">
                 <div class="img3 one"></div>
-                <p class="bold">Vieux Port</p>
+                <p>Vieux Port</p>
             </a>
             <div class="cardX4 right">
-                <a class="margin shadow" href="#">
+                <a class="margin shadow box2" href="#">
                     <div class="img3 two"></div>
                     <p>Fort de Pomègues</p>
                 </a>
-                <a class="margin shadow" href="#">
+                <a class="margin shadow box3" href="#">
                     <div class="img3 tree"></div>
-                    <p>Activités à Marseille</p>
+                    <p>îles du Frioul</p>
                 </a>
             </div>
             <a class="cardX4 right shadow" href="#">
                 <div class="img3 four"></div>
-                <p>Activités à Marseille</p>
+                <p>Parc National des Calanques</p>
             </a>
             <div class="cardX4">
-                <a class="margin shadow" href="#">
+                <a class="margin shadow box5" href="#">
                     <div class="img3 five"></div>
-                    <p>Activités à Marseille</p>
+                    <p>Notre-Dame-de-la-Garde</p>
                 </a>
-                <a class="margin shadow" href="#">
+                <a class="margin shadow box6" href="#">
                     <div class="img3 six"></div>
-                    <p>Activités à Marseille</p>
+                    <p>Parc Longchamp</p>
                 </a>
             </div>
         </div>
     </section>
     <footer>
-        <ul>A propos</ul>
-        <ul>Nos hébergements</ul>
-        <ul>Assistance</ul>
+        <ul>
+            <li class="bold">A propos</li>
+            <li><a href="">Fonctionnement du site</a></li>
+            <li><a href="">Conditions générales de vente</a></li>
+            <li><a href="">Données et confidentialité</a></li>
+        </ul>
+        <ul>
+            <li class="bold">Nos hébergements</li>
+            <li><a href="">Charte qualité</a></li>
+            <li><a href="">Soumettre votre hôtel</a></li>
+        </ul>
+        <ul>
+            <li class="bold">Assistance</li>
+            <li><a href="">Centre d'aide</a></li>
+            <li><a href="">Nous contacter</a></li>
+        </ul>
     </footer>
 </body>
 </html>
