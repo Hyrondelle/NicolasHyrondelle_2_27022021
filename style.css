@@ -3,12 +3,14 @@
     margin: 0px;
     text-decoration: none;
 }
+body{
+    min-width: 387px;
+}
 header{
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 .logo{
     height: 50px;
@@ -16,7 +18,7 @@ header{
 }
 nav{
     display: flex;
-    margin-right: 80px;
+    margin-right: 90px;
 }
 nav a{
     text-decoration: none;
@@ -49,7 +51,6 @@ h1{
 }
 section p{
     font-weight: 500;
-   
 }
 .research{
     display: flex;
@@ -65,13 +66,11 @@ section p{
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
 }
-
 .recherche{
     border: solid #F2F2F2 1px;
     font-weight: bold;
     padding: 10px;
     font-size: 16px;  
-    
 }
 .search{
     font-weight: 600;
@@ -163,7 +162,7 @@ article h3{
     margin-top: 30px;
     margin-left: 30px;
 }
-.heberMarseille{
+#heberMarseille{
     display: flex;
     justify-content: space-evenly;
 }
@@ -268,7 +267,7 @@ section h3{
 .space2{
     margin: 5px 0 40px 0;
 }
-.activitées{
+#activitées{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -291,27 +290,22 @@ section h3{
     margin-bottom: 30px; 
 }
 .shadow{
-    
     border-radius: 20px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
-    
 }
 .img3{
     border-radius: 20px 20px 0 0;
-    
   }
 .one{
     height: 340px;
     background-position: center;
     background-size: cover;
-     
     background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   }
 .two{
     height: 150px;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover; 
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   }
 .tree{
@@ -323,8 +317,7 @@ section h3{
 .four{
     height: 340px;
     background-size:cover;
-    background-position:center;
-    
+    background-position:center;   
     background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   }
 .five{
@@ -336,8 +329,7 @@ section h3{
 .six{
     height: 130px;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;  
     background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
   .box2{
@@ -359,7 +351,6 @@ footer{
     width: 100%;
     height: 170px;
     background-color: #F2F2F2;
-   
 }
 ul{
     width: 33%; 
@@ -368,7 +359,6 @@ ul{
 }
 li{
     margin-top: 10px;
-    
 }
 li a{
     color: black;
@@ -384,11 +374,10 @@ li a{
     }
 }
 @media screen and (max-width:1086px) {
-    .activitées{
+    #activitées{
         display:flex;
         flex-wrap: wrap;
         height: 800px;
-        
     }
 }
 @media screen and (max-width:1020px) {
@@ -427,7 +416,7 @@ li a{
     }
 }
 @media screen and (max-width:748px) {
-    .heberMarseille{
+    #heberMarseille{
         display:flex;
         flex-wrap:wrap;
         margin: 0;
@@ -441,22 +430,40 @@ li a{
         background-color: white; 
     }
     .cardX2{
-        width: 100%;
+        width: 96%;
+        margin: 0;
     }
     .cardX4{
-        width: 100%;
+        width: 96%;
+        margin: 0;
     }
-    .activitées{
+    #activitées{
         height: 1600px;
+        margin: 0;
+    }
+    aside{
+        margin-left: 0px;  
     }
     ul{
-        width:100%
+        width:80%;
+        margin: 0;
+        padding: O;
     }
     .card:hover,.card2:hover,.shadow:hover{
         transform: scale(1);
     }
+    .heberAvecPopulaire{
+        margin: 20px 0px 20px 0px;
+    } 
+    aside{
+        border-radius: 0;  
+    }
+    footer{
+        display: block;
+        height: 350px;
+        padding-top: 20px ;
+    }
 }
-
 @media screen and (max-width:500px) {
     .search{
         display: none;
@@ -475,12 +482,10 @@ li a{
     }
     header{
         display:flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
     section{
-        margin-top: 70px;
-        
+        margin-top: 70px; 
     }
     nav{
         position: absolute;
@@ -503,13 +508,5 @@ li a{
         border-bottom:solid 2px #0065FC;
         border-top:none;
         color: #0065FC;
-    }
-    aside{
-        border-radius: 0;  
-    }
-    footer{
-        display: block;
-        height: 350px;
-        padding-top: 20px ;
-    }
+    } 
 }
