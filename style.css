@@ -81,6 +81,7 @@ section p{
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
     border:none;
+    cursor: pointer;
 }
 .search2{
     display: none;
@@ -481,6 +482,7 @@ li a{
         border-bottom-left-radius: 12px;
         border-top-left-radius: 12px;
         border: none;
+        cursor: pointer;
     }
     header{
         display:flex;
