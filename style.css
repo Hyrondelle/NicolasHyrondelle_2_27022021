@@ -3,9 +3,6 @@
     margin: 0px;
     text-decoration: none;
 }
-body{
-    min-width: 387px;
-}
 header{
     height: 50px;
     width: 100%;
@@ -447,7 +444,7 @@ li a{
         margin-left: 0px;  
     }
     ul{
-        width:80%;
+        width:70%;
         margin: 0;
         padding: O;
     }
@@ -513,4 +510,7 @@ li a{
         border-top:none;
         color: #0065FC;
     } 
+    .space2{
+        margin: 5px 0 5px 0;
+    }
 }
